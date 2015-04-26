@@ -5,6 +5,9 @@
     <h3><a ng-href="{{extractPath(node.url)}}" href="">{{node.title}}</a></h3>
     <a class="btn btn-sm btn-default pull-right" ng-href="{{extractPath(node.url)}}" href="" role="button">Learn more &raquo;</a>
     <p ng-bind-html="node.body.summary"></p>
-    <a ng-href="{{extractPath(node.url)}}" href=""><img drupal-image-id="{{node.field_media.file.id}}" drupal-image-style="large" /></a>
+    <a ng-href="{{extractPath(node.url)}}" href="">
+      <!--<img drupal-image-id="{{node.field_media.file.id}}" drupal-image-style="large" />-->
+      <img src="http://placehold.it/1600x900&text=2x+Screenshot" width="1200" />
+    </a>
   </div></div>
 </div>
