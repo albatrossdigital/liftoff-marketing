@@ -1,0 +1,11 @@
+<div class="container features">
+  <div class="col-md-4" ng-repeat="node in nodes">
+
+    <div class="feature-icon" style="color: {{node.field_icon.color}};">
+      <i class="fa {{node.field_icon.icon}}"></i>
+      <div class="border" style="border-color: {{node.field_icon.color}};"></div>
+    </div>
+    <h3>{{node.title}}</h3>
+    <p ng-bind-html="node.body.value"></p>
+  </div>
+</div>

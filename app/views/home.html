@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <div class="container">
+    
+    <div class="row btns">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4 text-center">
+        <p>Liftoff is currently in a free private beta.</p>
+        <a href="#" class="btn btn-lg btn-primary" role="button">Request invite</a>
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+
+    <div class="laptop-bg"><div class="laptop-inner"></div></div>
+
+  </div>
+</div>
+
+<div class="container" ng-repeat="link in parentLinks">
+  <children parent-link="link" links="links" nodes="nodes" api-url="{{apiUrl}}"></children>
+</div>
+
+
+<div ui-view></div>

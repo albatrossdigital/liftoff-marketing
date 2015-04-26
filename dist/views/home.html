@@ -1,0 +1,30 @@
+<div class="container">
+  <h3>Citizens come to your website to get stuff done. Help them.</h3>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    
+    <div class="row btns">
+      <div class="col-md-4">
+        <a href="#" class="btn btn-lg btn-info" role="button">Live demo</a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="btn btn-lg btn-primary" role="button">Spin up your own demo site</a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="btn btn-lg btn-info" role="button">Get updates</a>
+      </div>
+    </div>
+
+    <div class="laptop-bg"><div class="laptop-inner"></div></div>
+
+  </div>
+</div>
+
+<div class="container" ng-repeat="link in parentLinks">
+  <children parent-link="link" links="links" nodes="nodes" api-url="{{apiUrl}}"></children>
+</div>
+
+
+<div ui-view></div>

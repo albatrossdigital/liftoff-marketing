@@ -1,0 +1,9 @@
+<div class="container apps">
+  <h2>{{node.title}}</h2>
+  <p ng-bind-html="node.body.value"></p>
+  <div class="col-md-3 icon-wrapper" ng-repeat="node in nodes" ng-click="appGo({nid: node.nid})">
+    <div class="app-icon" style="background-color: {{node.field_icon.color}};"><i class="fa {{node.field_icon.icon}}"></i></div>
+    <h4><a ui-sref="app({nid: node.nid})">{{node.title}}</a></h4>
+    <p ng-bind-html="node.body.value"></p>
+  </div>
+</div>
