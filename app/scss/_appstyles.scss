@@ -63,6 +63,7 @@ dl, ol, ul {
 
 .jumbotron {
   background-color: #222222 !important;
+  color: #eee;
 
   .btns {
     text-align: center;
@@ -164,16 +165,21 @@ dl, ol, ul {
   width: 1250px;
   height: 756px;
   background: url(../images/laptop.png) center no-repeat;
-  background-size: contain;
-  padding-top: 69px;
-  padding-left: 171px;
+  background-size: 1170px;
+  padding-top: 86px;
+  padding-left: 193px;
   position: relative;
 
   .laptop-inner {
-    width: 908px;
-    height: 569px;
-    background: url(../images/mockup.jpg) center top no-repeat;
+    width: 859px;
+    height: 549px;
+    background: #000;
     background-size: cover;
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
