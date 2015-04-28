@@ -15,7 +15,6 @@ angular.module('app', [
   'ngSanitize',
   //'ngAnimate',  // @todo: This was causing an error with the loading of templates in childrenDir.js ($scope.getTemplate)
   'ngTouch',
-  'ui.bootstrap'
 ])
 
 .run(
@@ -27,13 +26,8 @@ angular.module('app', [
 			$rootScope.$stateParams = $stateParams;
 
       //$rootScope.pageUrl = 'http://localhost:9000';
-<<<<<<< HEAD
       $rootScope.apiUrl = 'http://liftoff-marketing.liftoff.albatrossdigital.com/';
       //$rootScope.apiUrl = 'http://liftoff3.local/';
-=======
-      $rootScope.apiUrl = 'http://helm-marketing.liftoff.albatrossdigital.com/';
-      $rootScope.apiUrl = 'http://liftoff3.local/';
->>>>>>> cc2215e1f7c79f8b6b63795340d741e1ab9c45f2
       $rootScope.myTownUrl = 'http://mytown.helmcivic.com';
       $rootScope.exploreUrl = 'http://explore.helmcivic.com';
       $rootScope.menuName = 'main-menu';
