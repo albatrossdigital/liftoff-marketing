@@ -1,0 +1,40 @@
+
+<div class="container">
+
+<a href="/" class="btn btn-default btn-sm right btn-home">&laquo; Back Home</a>
+<h2>Request Invite</h2>
+
+<div class="row"><div class="col-md-8">
+  <p>
+    We're still in a private beta while we work out the kinks. Fill out the form below and we'll launch your Liftoff Space in the next week or two.
+  </p>
+  <form role="form">
+    <h3>Your info</h3>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="name">Email</label>
+      <div class="col-sm-8 input-group">
+        <input type="text" class="form-control" id="mail" ng-model="mail" ng-change="getMachineName()" placeholder="">
+      </div>
+    </div>
+
+    <h3>Liftoff Space info</h3>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="name">Site Name</label>
+      <div class="col-sm-8 input-group">
+        <input type="text" class="form-control" id="name" ng-model="name" ng-change="getMachineName()" placeholder="City of Springfield" ng-model-options="{ debounce: 250 }">
+      </div>
+    </div>
+    <div class="form-group" ng-class="machineNameClass">
+      <label class="control-label col-sm-4" for="machine_name">URL</label>
+      <div class="col-sm-8 input-group">
+        <input type="text" class="form-control" id="name" ng-model="machineName" placeholder="{{urlPlaceholder}}" ng-focus="machineNameFocused=true"><div class="input-group-addon">.liftoff.space</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-12">
+        <input type="submit" name="submit" value="Request invite" class="btn btn-primary" ng-click="submit()">
+      </div>
+    </div>
+  </form>
+
+</div></div></div>

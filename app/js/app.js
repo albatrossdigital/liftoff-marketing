@@ -10,6 +10,7 @@ angular.module('app', [
   'drupalService',
   'ui.router',
   'app.children',
+  'app.site',
   'drupalImage',
   'metaInfo',
   'ngSanitize',

@@ -2,9 +2,18 @@ main {
   min-height: 100%;
 }
 
-p {
+p,
+label {
   font-size: inherit;
 }
+
+input,
+select {
+  font-size: inherit !important;
+  line-height: inherit !important;
+  height: inherit !important;
+}
+
 
 dl, ol, ul {
   font-size: $font-size-base;
@@ -15,6 +24,9 @@ dl, ol, ul {
   max-width: inherit;
 }
 
+.btn-home{
+  margin-top: 40px;
+}
 
 
 .header {
@@ -282,6 +294,11 @@ iframe {
   border-bottom:0px;
   background-color:  rgba(0,0,0, .1);
   box-shadow: 0px 3px 0px rgba(0,0,0, .3);
+
+  &.coming-soon {
+    color: $gray;
+    text-align: center;
+  }
 }
 
 
@@ -303,19 +320,21 @@ iframe {
   
 .price.panel-grey>.panel-body {
   color: #fff;
-  background-color: #808080;
-}
+  background-color: $gray-lighter;
+  height: 100px;
+  
+  .lead {
+    font-size: 25px;
+  }
 
-
-
-.price.panel-grey>.panel-body .lead{
-    text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+  p {
+    margin-bottom: 10px
+  }
 }
 
 .price.panel-grey .list-group-item {
   color: #333;
   background-color: rgba(50,50,50, .01);
-  font-weight:600;
   text-shadow: 0px 1px 0px rgba(250,250,250, .75);
 }
 

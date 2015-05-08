@@ -1,0 +1,11 @@
+<div class="gray-bg templates"><div class="container">
+  <h2>{{node.title}}</h2>
+  <p ng-bind-html="node.body.value"></p>
+  <div class="col-md-6 premium-app-teaser" ng-repeat="node in nodes" ng-click="go(extractPath(node.url))"><div class="well">
+    <h3><a ng-href="{{extractPath(node.url)}}" href="">{{node.title}}</a></h3>
+    <p ng-bind-html="node.body.summary"></p>
+    <a ng-href="{{extractPath(node.url)}}" href=""><img drupal-image-id="{{node.field_media.file.id}}" drupal-image-style="large" /></a>
+    <a class="btn btn btn-info" ng-href="{{node.field_example_url.url}}" href="" role="button">{{node.field_example_url.title}}</a>
+    <a class="btn btn btn-primary" ng-href="{{node.field_repo_url.url}}" href="" role="button">{{node.field_repo_url.title}}</a>
+  </div></div>
+</div></div>
