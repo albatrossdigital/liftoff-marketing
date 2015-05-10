@@ -28,6 +28,20 @@ dl, ol, ul {
   margin-top: 40px;
 }
 
+.gray-bg{
+  background: $gray-lightest;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.gray-dark-bg {
+  background: $gray-lighter;
+}
+
+.gray-border {
+  border-bottom: 1px solid $gray-lightish;
+}
+
 
 .header {
   color: $brand-primary;

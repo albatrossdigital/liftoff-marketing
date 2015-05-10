@@ -27,7 +27,7 @@ angular.module('app', [
 			$rootScope.$stateParams = $stateParams;
 
       //$rootScope.pageUrl = 'http://localhost:9000';
-      $rootScope.apiUrl = 'http://liftoff-marketing.liftoff.albatrossdigital.com/';
+      $rootScope.apiUrl = 'http://liftoff-marketing.liftoff.space/';
       //$rootScope.apiUrl = 'http://liftoff3.local/';
       $rootScope.myTownUrl = 'http://mytown.helmcivic.com';
       $rootScope.exploreUrl = 'http://explore.helmcivic.com';

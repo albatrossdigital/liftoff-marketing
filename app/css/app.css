@@ -4669,6 +4669,17 @@ dl, ol, ul {
 .btn-home {
   margin-top: 40px; }
 
+.gray-bg {
+  background: #f5f5f5;
+  margin-top: 40px;
+  padding-bottom: 40px; }
+
+.gray-dark-bg {
+  background: #eeeeee; }
+
+.gray-border {
+  border-bottom: 1px solid #ccc; }
+
 .header {
   color: #0071BB;
   background-color: #000; }
