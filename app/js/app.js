@@ -94,7 +94,7 @@ angular.module('app', [
           if ($window.ga){
             $window.ga('send', 'pageview', { 
               page: $location.path(),
-              title: toState.data && toState.data.title ? toState.data.title : 'FILLME!'
+              title: toState.data && toState.data.title ? toState.data.title : 'Liftoff by Albatross Digital'
             });
           }
 
@@ -132,9 +132,9 @@ angular.module('app', [
     function ($locationProvider,   $stateProvider,   $urlRouterProvider,   metaInfoProvider) {
 
       // Set base meta info
-      metaInfoProvider.setBaseTitle('FILLME!');
-      metaInfoProvider.setBaseDescription('FILLME!');
-      metaInfoProvider.setBaseKeywords('FILLME!');
+      metaInfoProvider.setBaseTitle('Liftoff by Albatross Digital');
+      metaInfoProvider.setBaseDescription('Content creation and migration tool');
+      metaInfoProvider.setBaseKeywords('digital agency, content creation, content migration, drupal, gather content');
 
       // set location provider as regular urls
       $locationProvider.html5Mode(true);
